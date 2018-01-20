@@ -1,0 +1,6 @@
+@import "../app";
+
+.test {
+  composes: h1-test from './testCompose.scss';
+  font-size: $fontS;
+}
