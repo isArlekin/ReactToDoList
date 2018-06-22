@@ -1,21 +1,30 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { AppContainer } from 'react-hot-loader';
 
 import './index.scss';
-import Root from './components/test/test';
+import '../client/components/app.scss';
 
-const render = Component => {
+import configStore from "./configStore";
+import {Provider} from "react-redux";
+
+import AppRoot from "./containers/app.container";
+
+
+const store = configStore();
+
+const render = App => {
     ReactDOM.render(
-        <AppContainer>
-            <Component />
-        </AppContainer>,
-        document.getElementById('app-mtd')
+        <Provider store={store}>
+            <App />
+        </Provider>,
+        document.getElementById('born-to-do')
     );
 };
 
-render(Root);
+render(AppRoot);
 
 if (module.hot) {
-    module.hot.accept('./components/test/test', () => { render(Root) });
+
+    //todo Should I add other components to this section?
+    module.hot.accept('./components/dashboard/dashboard', () => { render(AppRoot) });
 }

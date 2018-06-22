@@ -6,7 +6,6 @@ module.exports = function () {
         devServer: {
             contentBase: __dirname + 'client',
             historyApiFallback: true,
-            open: true
         },
         module: {
             rules: [

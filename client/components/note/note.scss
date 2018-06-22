@@ -1,0 +1,39 @@
+@import "../../vars";
+
+.note {
+  display: flex;
+  flex-direction: column;
+  width: 24rem;
+  height: 30rem;
+  border-radius: $radius;
+  overflow: hidden;
+  background: $white;
+  padding: 1.5rem;
+  box-shadow: $shadow;
+  cursor: pointer;
+  transition: box-shadow $transition-time;
+  margin: 1rem;
+
+  &:focus {
+    //todo add outline when a note is focusing
+  }
+
+  &:hover {
+    box-shadow: $shadow-hover;
+  }
+}
+
+.header {
+  font-weight: 700;
+  width: 100%;
+}
+
+.headerText {
+
+}
+
+.body {
+  width: 100%;
+  padding: 2rem 0;
+  font-size: 1.6rem;
+}

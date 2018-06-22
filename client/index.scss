@@ -1,3 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  min-height: 100vh;
+  font-size: 10px;
+  font-family: 'Nunito', sans-serif;
+  // There are 300, 400, 700
+  font-weight: 400;
+}
+
 body {
-  background: lighten(red, 20%);
+  display: block;
+  width: 100%;
+  min-height: 100vh;
+  font-size: 1.4rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
 }

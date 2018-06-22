@@ -5,7 +5,7 @@ const autoprefixer = require('autoprefixer');
 
 module.exports = function () {
     return {
-        entry: './client/main.js',
+        entry: './client/notes.js',
         module: {
             rules: [
                 {
